@@ -1,0 +1,43 @@
+{# dialog container #}
+<div
+  id="{{modalId}}"
+  {% if block('header') is defined %}aria-labelledby="header-{{modalId}}"{% endif %}
+  aria-hidden="true"
+  class="snippets-modal__container"
+>
+  {# dialog overlay #}
+  <div data-a11y-dialog-hide class="snippets-modal__overlay"></div>
+  {# dialog content #}
+  <div role="document" class="snippets-modal__window">
+    <div class="snippets-modal__header">
+      {# header block #}
+      {% if block('header') is defined %}
+      <h2 id="header-{{modalId}}" class="snippets-modal__title">
+        {% block header %}{% endblock %}
+      </h2>
+      {% endif %}
+      {# close button #}
+      <button 
+        type="button" 
+        data-a11y-dialog-hide 
+        aria-label="{{closeTitle is defined and closeTitle is not empty ? closeTitle : 'close'|t}}"
+        title="{{closeTitle is defined and closeTitle is not empty ? closeTitle : 'close'|t}}"
+        class="snippets-modal__close"
+      >
+        {{closeText is defined and closeText is not empty ? closeText : '&times;'}}
+      </button>      
+    </div>
+    {# markup block #}
+    <div class="snippets-modal__content">
+    {% block content %}{% endblock %}
+    </div>
+  </div>
+</div>
+
+{% js %}
+(function(){
+  const element = document.getElementById('{{modalId}}')
+  const dialog = new A11yDialog(element)  
+  element._dialog = dialog
+})();
+{% endjs %}

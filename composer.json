@@ -1,0 +1,42 @@
+{
+    "name": "craftsnippets/modal-component",
+    "description": "Modal component",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "modal component",
+        "modal"
+    ],
+    "support": {
+        "docs": "???",
+        "issues": "???"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pogorzelski",
+            "homepage": "https://craftsnippets.com/"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^4.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "craftsnippets\\modalcomponent\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Modal component",
+        "handle": "modal-component",
+        "developer": "Piotr Pogorzelski",
+        "developerUrl": "https://craftsnippets.com/",
+        "documentationUrl": "???",
+        "changelogUrl": "???",
+        "class": "craftsnippets\\modalcomponent\\ModalComponent"
+    }
+}
