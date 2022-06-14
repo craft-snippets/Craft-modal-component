@@ -1,6 +1,6 @@
 {
     "name": "craftsnippets/modal-component",
-    "description": "Modal component",
+    "description": "Modal component plugin for Craft CMS",
     "type": "craft-plugin",
     "version": "1.0.0",
     "keywords": [
@@ -12,8 +12,8 @@
         "modal"
     ],
     "support": {
-        "docs": "???",
-        "issues": "???"
+        "docs": "https://github.com/craft-snippets/Craft-modal-component/blob/master/README.md",
+        "issues": "https://github.com/craft-snippets/Craft-modal-component/issues"
     },
     "license": "MIT",
     "authors": [
@@ -35,8 +35,8 @@
         "handle": "modal-component",
         "developer": "Piotr Pogorzelski",
         "developerUrl": "https://craftsnippets.com/",
-        "documentationUrl": "???",
-        "changelogUrl": "???",
+        "documentationUrl": "https://github.com/craft-snippets/Craft-modal-component/blob/master/README.md",
+        "changelogUrl": "https://github.com/craft-snippets/Craft-modal-component/blob/master/CHANGELOG.md",
         "class": "craftsnippets\\modalcomponent\\ModalComponent"
     }
 }

@@ -20,11 +20,11 @@ To install the plugin, follow these instructions.
 
 ## Modal component Overview
 
-Modal component plugin provides you with very simplistic and robust modal template. It does not make any assumptions about modal content and provides very basic styling which can be easily adjusted to your site template. 
+The modal component plugin provides you with a very simplistic and robust modal template. It does not make any assumptions about modal content and provides very basic styling which can be easily adjusted to your site template.
 
-Modals created by this plugin integrate seamlessly with CRaft templates and provide basic functionality like trapping focus inside modal or proper aria tags for accesibility. Beyond that, you can customize your modal in any way you want.
+Modals created by this plugin integrate seamlessly with CRaft templates and provide basic functionality like trapping focus inside modal or proper aria tags for accessibility. Beyond that, you can customize your modal in any way you want.
 
-To use modal, you just need to use `embed` Twig tag with template provided by plugin:
+To use modal, you just need to use embed Twig tag with the template provided by plugin:
 
 ```
 {% embed 'snippets-modal/modal' with {
@@ -46,15 +46,15 @@ Text for close button - optional, by default it is set to "x".
 {% endembed %}
 ```
 
-You can show or hide modal in one of the two ways: using button, or using JS method. 
+You can show or hide the modal in one of the two ways: using the button, or using the JS method. 
 
-To create button which shows modal, you need to add `data-a11y-dialog-show` attribute to button and set it to ID you set in `modalId` variable passed to modal component:
+To create a button that shows modal, you need to add the `data-a11y-dialog-show` attribute to the button and set it to the ID you set in the `modalId` variable passed to the modal component:
 
 ```
 <button data-a11y-dialog-show="my-modal-id">open modal</button>
 ```
 
-To create button which hides modal, you need to add `data-a11y-dialog-hide` attribute to button. If you do not set it to any ID, it will close any modal currently shown.
+To create a button that hides modal, you need to add the `data-a11y-dialog-hide` attribute to the button. If you do not set it to any ID, it will close any modal currently shown.
 
 To use JS function, you need to grab DOM object of modal contaner by using modal ID and use `_dialog.show()` or `_dialog.hide()` method:
 
@@ -77,7 +77,7 @@ document.getElementById('my-modal-id').addEventListener('hide', function (event)
 
 ## CSS styles
 
-Modal component plugin provides two CSS files - one with very basic functionality responsible for showing and hiding modal and one with default theme. You can disable either of them by creating `config/dialog-component.php` file and setting two variables to `false`:
+The modal component plugin provides two CSS files - one with very basic functionality responsible for showing and hiding modal and one with the default theme. You can disable either of them by creating a `config/dialog-component.php` file and setting two variables to `false`:
 
 ```
 public $useBaseCss = false;
@@ -86,6 +86,6 @@ public $useDefaultTheme = false;
 
 ## a11y-dialog library
 
-Modal component uses excellent [a11y-dialog](https://a11y-dialog.netlify.app/) library for its internal functionality. I recomment reading a11y-dialog documentation if you want to learn more and maybe customize your modal behavior further.
+Modal component uses excellent [a11y-dialog](https://a11y-dialog.netlify.app/) library for its internal functionality. I recommend reading a11y-dialog documentation if you want to learn more and maybe customize your modal behavior further.
 
 Brought to you by [Piotr Pogorzelski](http://craftsnippets.com/)
