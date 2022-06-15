@@ -22,7 +22,9 @@ To install the plugin, follow these instructions.
 
 The modal component plugin provides you with a very simplistic and robust modal template. It does not make any assumptions about modal content and provides very basic styling which can be easily adjusted to your site template.
 
-Modals created by this plugin integrate seamlessly with CRaft templates and provide basic functionality like trapping focus inside modal or proper aria tags for accessibility. Beyond that, you can customize your modal in any way you want.
+Modals created by this plugin integrate seamlessly with Craft templates and provide basic functionality like trapping focus inside modal or proper aria tags for accessibility. Beyond that, you can customize your modal in any way you want.
+
+## How to use
 
 To use modal, you just need to use embed Twig tag with the template provided by plugin:
 
