@@ -79,7 +79,7 @@ document.getElementById('my-modal-id').addEventListener('hide', function (event)
 
 ## CSS styles
 
-The modal component plugin provides two CSS files - one with very basic functionality responsible for showing and hiding modal and one with the default theme. You can disable either of them by creating a `config/dialog-component.php` file and setting two variables to `false`:
+The modal component plugin provides two CSS files - one with very basic functionality responsible for showing and hiding modal and one with the default theme. You can disable either of them by creating a `config/dialog-component.php` file and setting one of these two variables to `false`:
 
 ```
 public $useBaseCss = false;
