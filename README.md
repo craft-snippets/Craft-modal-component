@@ -1,5 +1,7 @@
 # Modal component plugin for Craft CMS 4.x
 
+![Screenshot](resources/img/modal.png)
+
 ## Requirements
 
 This plugin requires Craft CMS 4.0.0r later.

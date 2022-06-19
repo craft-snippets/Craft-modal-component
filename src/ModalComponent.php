@@ -84,10 +84,15 @@ class ModalComponent extends Plugin
 
     private function registerAssets()
     {   
+        if(Craft::$app->getRequest()->getIsSiteRequest() == false){
+            return;
+        }
+
         Craft::$app->view->registerAssetBundle(\craftsnippets\modalcomponent\assetbundles\ModalAssetJs::class);
         if(ModalComponent::$plugin->getSettings()->useBaseCss == true){
             Craft::$app->view->registerAssetBundle(\craftsnippets\modalcomponent\assetbundles\ModalAssetCssBase::class);
         }
+        
         if(ModalComponent::$plugin->getSettings()->useDefaultTheme == true){
             Craft::$app->view->registerAssetBundle(\craftsnippets\modalcomponent\assetbundles\ModalAssetCssDefaultTheme::class);
         }                    
