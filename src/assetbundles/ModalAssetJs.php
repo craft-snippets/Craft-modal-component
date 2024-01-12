@@ -14,6 +14,7 @@ class ModalAssetJs extends AssetBundle
 
         $this->js = [
             'js/a11y-dialog.min.js',
+            'js/modal.js',
         ];
 
         parent::init();

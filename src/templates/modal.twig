@@ -4,6 +4,7 @@
   {% if block('header') is defined %}aria-labelledby="header-{{modalId}}"{% endif %}
   aria-hidden="true"
   class="snippets-modal__container"
+  data-modal-component
 >
   {# dialog overlay #}
   <div data-a11y-dialog-hide class="snippets-modal__overlay"></div>
@@ -33,11 +34,3 @@
     </div>
   </div>
 </div>
-
-{% js %}
-(function(){
-  const element = document.getElementById('{{modalId}}')
-  const dialog = new A11yDialog(element)  
-  element._dialog = dialog
-})();
-{% endjs %}

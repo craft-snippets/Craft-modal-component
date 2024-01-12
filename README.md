@@ -43,10 +43,6 @@ Your modal content - any HTML can go there.
 Modal header - optional.
 {% endblock %}
 
-{% block closeText %}
-Text for close button - optional, by default it is set to "x".
-{% endblock %}
-
 {% endembed %}
 ```
 
@@ -70,11 +66,11 @@ document.getElementById('my-modal-id')._dialog.hide()
 You can also attach behavior to modal `show` and `hide` events:
 
 ```
-document.getElementById('my-modal-id').addEventListener('show', function (event) {
+document.getElementById('my-modal-id')._dialog.on('show', function (event) {
   // Do something when modal gets shown
 })
 
-document.getElementById('my-modal-id').addEventListener('hide', function (event) {
+document.getElementById('my-modal-id')._dialog.on('hide', function (event) {
   // Do something when modal gets hidden
 })
 ```
