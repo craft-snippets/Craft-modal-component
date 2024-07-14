@@ -2,7 +2,7 @@
     "name": "craftsnippets/modal-component",
     "description": "Modal component plugin for Craft CMS",
     "type": "craft-plugin",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "keywords": [
         "craft",
         "cms",
@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^4.0.0"
+        "craftcms/cms": "^5.0.0"
     },
     "autoload": {
         "psr-4": {

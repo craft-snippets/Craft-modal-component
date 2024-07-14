@@ -1,4 +1,4 @@
-# Modal component plugin for Craft CMS 4.x
+# Modal component plugin for Craft CMS 5.x
 
 ![Screenshot](resources/img/modal.png)
 
