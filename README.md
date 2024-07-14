@@ -88,4 +88,8 @@ public $useDefaultTheme = false;
 
 Modal component uses excellent [a11y-dialog](https://a11y-dialog.netlify.app/) library for its internal functionality. I recommend reading a11y-dialog documentation if you want to learn more and maybe customize your modal behavior further.
 
+## Credits
+
 Brought to you by [Piotr Pogorzelski](http://craftsnippets.com/)
+
+Plugin icon by [Vaadin Icons](https://iconscout.com/free-icon/modal-10).
